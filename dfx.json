@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "election_dapp": {
+      "main": "src/election_dapp/main.mo",
+      "type": "motoko"
+    }
+  },
+  "dfx": "0.15.1",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    },
+    "ic": {
+      "type": "persistent",
+      "providers": ["https://ic0.app"]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
